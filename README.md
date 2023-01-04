@@ -7,7 +7,6 @@
 ```
 curl -L -o rts https://github.com/wojtekw92/rts/releases/latest/download/rts-x86_64-unknown-linux-gnu
 chmod +x rts
-cp target/x86_64-unknown-linux-gnu/release/rts ./rts-x86_64-unknown-linux-gnu
 ```
 
 to test run:
@@ -22,6 +21,7 @@ You should get output: `[Wed, 04 Jan 2023 13:15:12 +0000] Hello World!`
 
 ```
 RUSTFLAGS='-C target-feature=+crt-static' cargo build --release --target x86_64-unknown-linux-gnu
+cp target/x86_64-unknown-linux-gnu/release/rts ./rts-x86_64-unknown-linux-gnu
 ```
 
 ## Current status
